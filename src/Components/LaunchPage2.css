@@ -1,0 +1,115 @@
+.LaunchPage2 {
+    width: 100%;
+    height: 100vh;
+
+}
+
+.body {
+    /* max-width: 980px; */
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0);
+    mask-image: linear-gradient(black, black);
+
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Videocontent {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.Videocontent>h1 {
+    font-size: 75px;
+    width: 30%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    /* background-color: #000000cc; */
+}
+
+.LaunchPage2__content {
+    max-width: 490px;
+    width: 100%;
+    padding: 200px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+}
+
+.LaunchPage2__content>h2 {
+    color: #1d1d1f;
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.LaunchPage2__content>p {
+    display: inline-block;
+    color: transparent;
+    background-image: linear-gradient(90deg,
+            #1e3791 0%,
+            #2948b1 40%,
+            #3153c6 55%,
+            #385fda 60%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    padding-top: 0.5px;
+    margin-top: 16px;
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.LaunchPage2__content>span {
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.LaunchPage2__content>a {
+    text-decoration: none;
+    color: #2997ff;
+    font-size: 21px;
+    font-weight: 400;
+    margin: 0 14px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+
+    .Videocontent {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .Videocontent>h1 {
+        width: 100%;
+    }
+
+    .LaunchPage2 {
+        width: 300px;
+    }
+}

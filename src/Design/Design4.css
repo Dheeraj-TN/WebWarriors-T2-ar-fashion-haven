@@ -1,0 +1,48 @@
+.design4 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    padding: 0 20px;
+    margin-left: 30px;
+    align-items: center;
+    padding-inline-start: 5px;
+}
+
+.design4>img {
+    padding: 5px;
+    width: 600px;
+    height: 300px;
+}
+
+.design4 p {
+    width: 50%;
+}
+
+.aboutImg {
+    margin-left: 50px;
+    display: grid;
+
+}
+
+.aboutImg>p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    width: 70%;
+}
+
+.aboutImg>hr {
+    width: 50%;
+    color: lightgray;
+    margin-bottom: 30px;
+}
+
+.design4:hover {
+    background-color: #E3CCAE;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px white;
+}
+
+.design4:hover h2 {
+    color: black;
+}

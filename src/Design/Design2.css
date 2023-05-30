@@ -1,0 +1,38 @@
+.design2 {
+    display: grid;
+    place-items: center;
+    width: 500px;
+    height: 500px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    color: black;
+    flex-wrap: wrap;
+    transition: transform 100ms ease-in;
+}
+
+.design2>h2 {
+    font-size: 30px;
+    color: black;
+}
+
+.design2>button {
+    background-color: rgb(27, 27, 27);
+    ;
+    color: white;
+    padding: 10px 11px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    transition: transform 100ms ease-in;
+}
+
+.design2>button:hover {
+    transform: scale(1.03);
+}
+
+.design2:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}

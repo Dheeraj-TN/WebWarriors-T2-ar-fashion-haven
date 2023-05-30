@@ -1,0 +1,47 @@
+.footer {
+    margin-top: -400px;
+    padding-bottom: 40px;
+
+    background-color: #181823;
+}
+
+.footer__top {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo>img {
+    width: 250px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.footer1>p {
+    color: lightgray;
+    font-size: 13px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.footer1>p:hover {
+    color: white;
+}
+
+.footer__bottom {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer__right>.MuiSvgIcon-root {
+    margin-left: 30px;
+    font-size: 30px;
+    cursor: pointer;
+    color: gray;
+}
+
+.footer__right>.MuiSvgIcon-root:hover {
+    color: white;
+}

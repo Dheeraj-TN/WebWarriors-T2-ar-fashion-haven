@@ -1,0 +1,35 @@
+.design1 {
+    display: grid;
+    place-items: center;
+    width: 500px;
+    height: 500px;
+    padding: 20px;
+    background-color: rgb(27, 27, 27);
+    flex-wrap: wrap;
+    transition: transform 100ms ease-in;
+}
+
+.design1>h2 {
+    font-size: 30px;
+}
+
+.design1>button {
+    background-color: #f5f5ff;
+    color: black;
+    padding: 10px 11px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    transition: transform 100ms ease-in;
+}
+
+.design1>button:hover {
+    transform: scale(1.03);
+}
+
+.design1:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}

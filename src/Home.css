@@ -1,0 +1,15 @@
+@media (max-width:768px) {
+    .loader {
+        display: grid;
+        place-items: center;
+    }
+
+    .loader>img {
+        width: 200px;
+        height: 170px;
+    }
+
+    .loader__content {
+        size: 20;
+    }
+}
