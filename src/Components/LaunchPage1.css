@@ -1,0 +1,80 @@
+.bgImage {
+    top: 0;
+    position: relative;
+    height: 100%;
+    background: url("https://www.expressinfotoday.com/wp-content/uploads/2019/08/a.png") center no-repeat;
+    background-size: cover;
+}
+
+.bgGradient {
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0);
+    background-image: linear-gradient(to bottom,
+            rgba(0, 0, 0, 1.8) 0,
+            rgba(0, 0, 0, 0) 60%,
+            rgba(0, 0, 0, 0) 100%);
+
+}
+
+.LaunchPage1__body {
+    position: absolute;
+    top: 3%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    color: #fff;
+    padding: 20px;
+    left: 0;
+    right: 50%;
+}
+
+
+.LaunchPage1__body>h2 {
+    display: inline-block;
+    color: transparent;
+    background-image: linear-gradient(180deg, #ffb6ff, #b344ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    padding-top: 0.5px;
+    margin-top: 16px;
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.LaunchPage1__body>p {
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.LaunchPage1__body>a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: 21px;
+    font-weight: 600;
+    margin: 0 14px;
+    cursor: pointer;
+    transition: transform 100ms ease-in;
+}
+
+.LaunchPage1__body>a:hover {
+    transform: scale(1.03);
+}
+
+@media screen and (max-width: 768px) {
+    .bgImage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-shrink: 1 0 0;
+    }
+
+    .bgImage {
+        width: 420px;
+        margin-bottom: 40px;
+    }
+}
