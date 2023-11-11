@@ -1,11 +1,10 @@
 import React from "react";
 import "./LaunchPage2.css";
-import YouTube from "react-youtube";
 import { Fade } from "react-reveal";
 import videoBg from "/Users/dheerajtn/react/ar-fashion-haven/src/Components/WhatsApp Video 2023-05-28 at 3.40.41 PM.mp4";
 function LaunchPage2() {
   return (
-    <div className="LaunchPage2">
+    <div className="LaunchPage2" id="LaunchPage2">
       <div className="linear__gradient" />
       <Fade left>
         <div className="body">

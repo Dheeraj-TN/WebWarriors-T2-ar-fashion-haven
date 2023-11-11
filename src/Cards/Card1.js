@@ -65,7 +65,7 @@ const Card = () => {
                   <i class="fa-solid fa-tag"></i>Partner OfferSign up
                 </p>
                 <div className="price" style={{ color: "white" }}>
-                  <h1>₹899</h1>
+                  <h1 id="white-bg">₹899</h1>
                 </div>
               </div>
               <div className="main-img">

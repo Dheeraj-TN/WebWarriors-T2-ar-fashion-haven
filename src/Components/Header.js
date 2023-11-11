@@ -4,50 +4,93 @@ import ShoppingBagIcon from "@mui/icons-material/ShoppingBag";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import "./Header.css";
 import { Link } from "react-router-dom";
-import logo from "../logo.png";
+import logo from "../Another_image-fotor-bg-remover-2023060114656.png";
 import styled from "styled-components";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
+import LogoutIcon from "@mui/icons-material/Logout";
+import { useStateValue } from "../StateProvider";
+import { auth } from "../firebase";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { signOut } from "firebase/auth";
+import { useNavigate } from "react-router-dom";
 function Header() {
   const [burgerStatus, setBurgerStatus] = useState(false);
+  const [{ basket, user }, dispatch] = useStateValue();
+  const [searchItem, setSearchItem] = useState("");
+  const navigate = useNavigate();
+  const search_redirect = () => {
+    if (searchItem === "") {
+      return;
+    }
+    sessionStorage.setItem("searchItem", searchItem);
+    setSearchItem("");
+    navigate("/search");
+  };
+  const logout = () => {
+    signOut(auth)
+      .then(() => {
+        toast.warning("Logged out", {
+          autoClose: 2000,
+          pauseOnHover: true,
+          closeOnClick: false,
+        });
+        alert("User Logged out");
+        navigate("/login");
+      })
 
-  const aboutClick = () => {
-    const ele = document.querySelector(".LaunchPage2");
-    window.scrollTo({
-      top: ele?.getBoundingClientRect().top,
-      left: 0,
-      behavior: "smooth",
-    });
+      .catch((error) => {
+        console.log(error);
+      });
   };
   return (
-    <div className="header">
+    <div className="header" id="header">
       <Link to="/">
         <div className="header__logo">
           <img src={logo} alt="" />
         </div>
       </Link>
       <div className="header__search">
-        <SearchIcon />
-        <input type="text" placeholder="Search.." />
+        <SearchIcon onClick={search_redirect} />
+        <input
+          type="text"
+          placeholder="Search.."
+          value={searchItem}
+          onChange={(event) => setSearchItem(event.target.value)}
+        />
       </div>
       <div className="header__options">
         <Link to="/">
           <p>Home</p>
         </Link>
 
-        <a onClick={aboutClick}>
+        <Link to="/about">
           <p>About</p>
-        </a>
+        </Link>
         <Link to="/wardrobe">
           <p>Wardrobe</p>
         </Link>
-
-        <ShoppingBagIcon />
+        <Link to="/orders">
+          <p>Your Orders</p>
+        </Link>
+        <Link to="/checkout">
+          <div
+            className="cart"
+            style={{ display: "flex", alignItems: "center" }}
+          >
+            <ShoppingBagIcon />
+            <span className="header__basketCount">{basket?.length}</span>
+          </div>
+        </Link>
         <Link to="/login" className="headerLink__login">
           <AccountCircleIcon />
         </Link>
+        <div className="logout" onClick={logout}>
+          {user?.email && <LogoutIcon />}
+        </div>
       </div>
-      <div className="hamburger">
+      {/* <div className="hamburger">
         <HeaderRight>
           <Menu onClick={() => setBurgerStatus(true)}>
             <MenuIcon />
@@ -65,9 +108,9 @@ function Header() {
             </Link>
           </li>
           <li>
-            <a onClick={aboutClick}>
+            <Link to="/about">
               <p>About</p>
-            </a>
+            </Link>
           </li>
           <li>
             <p>Wardrobe</p>
@@ -81,7 +124,8 @@ function Header() {
             </Link>
           </li>
         </BurgerMenu>
-      </div>
+      </div> */}
+      <ToastContainer />
     </div>
   );
 }

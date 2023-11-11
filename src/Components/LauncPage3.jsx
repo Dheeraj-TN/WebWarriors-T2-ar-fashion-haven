@@ -6,6 +6,7 @@ import Design1 from "../Design/Design1";
 import Design2 from "../Design/Design2";
 import Design3 from "../Design/Design3";
 import Design4 from "../Design/Design4";
+import { Link } from "react-router-dom";
 function LaunchPage3() {
   const handleTop = () => {
     window.scrollTo({
@@ -50,30 +51,50 @@ function LaunchPage3() {
           </Fade>
           <Fade right>
             <div className="options2">
-              <Design1
-                title="Footware"
-                desc="The most comprehensive solution: Automatic 3D digitization based on photos. Virtual try-on on feet in AR mirror. Mobile foot measurement scan (6 dimensions) and accurate size recommendation."
-                shop="Shop now"
-              />
-              <Design2
-                title="Apparels"
-                desc="The best 3D/AR virtual fitting solution on the market: Virtual closet with AR and 3D web viewer. Heatmap size fitting visualization. Easy digitization based on ZPAC or DXF patterns with grading and fabric data."
-                shop="Shop now"
-              />
+              <Link
+                to="/wardrobe"
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                <Design1
+                  title="Footware"
+                  desc="The most comprehensive solution: Automatic 3D digitization based on photos. Virtual try-on on feet in AR mirror. Mobile foot measurement scan (6 dimensions) and accurate size recommendation."
+                  shop="Shop now"
+                />
+              </Link>
+              <Link
+                to="/wardrobe"
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                <Design2
+                  title="Apparels"
+                  desc="The best 3D/AR virtual fitting solution on the market: Virtual closet with AR and 3D web viewer. Heatmap size fitting visualization. Easy digitization based on ZPAC or DXF patterns with grading and fabric data."
+                  shop="Shop now"
+                />
+              </Link>
             </div>
           </Fade>
           <Fade left>
             <div className="options2">
-              <Design2
-                title="Digital Tranformation"
-                desc="We provide comprehensive solutions for the digital transformation process in the fashion industry - apparel, footwear and accessories. We cover all key areas: digitization, visualization and size fitting."
-                shop="Get More Info"
-              />
-              <Design1
-                title="Augmented Reality"
-                desc="Convert any 3D objects into Augmented Reality automatically with our drag-and-drop tool. WebAR is available for iOS and Android devices. Ready for the Metaverse, 5G and upcoming AR glasses."
-                shop="Go to AR"
-              />
+              <a
+                onClick={handleTop}
+                style={{ textDecoration: "none", color: "black" }}
+              >
+                <Design2
+                  title="Digital Tranformation"
+                  desc="We provide comprehensive solutions for the digital transformation process in the fashion industry - apparel, footwear and accessories. We cover all key areas: digitization, visualization and size fitting."
+                  shop="Get More Info"
+                />
+              </a>
+              <Link
+                to="http://localhost:5173/"
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                <Design1
+                  title="Augmented Reality"
+                  desc="Convert any 3D objects into Augmented Reality automatically with our drag-and-drop tool. WebAR is available for iOS and Android devices. Ready for the Metaverse, 5G and upcoming AR glasses."
+                  shop="Go to AR"
+                />
+              </Link>
             </div>
           </Fade>
         </div>

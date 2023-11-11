@@ -2,13 +2,18 @@ import React, { useEffect, useState } from "react";
 import Header from "./Components/Header";
 import LaunchPage1 from "./Components/LaunchPage1";
 import LaunchPage2 from "./Components/LaunchPage2";
-import LaunchPage3 from "./Components/LauncPage3";
-import Footer from "./Components/Footer";
+// import LaunchPage3 from "./Components/LauncPage3";
+// import Footer from "./Components/Footer";
 import { PropagateLoader } from "react-spinners";
 import logo from "./logo.png";
 import "./Home.css";
+import { useStateValue } from "./StateProvider";
+import Login from "./Authentication/Login";
+import LaunchPage4 from "./Components/LaunchPage4";
+import Footer from "./Components/Footer";
 function Home() {
   const [loading, setLoading] = useState(false);
+  const [{ user }, dispatch] = useStateValue();
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
@@ -29,12 +34,15 @@ function Home() {
             data-testid="loader"
           />
         </div>
+      ) : !user ? (
+        <Login />
       ) : (
         <>
           <Header />
           <LaunchPage1 />
           <LaunchPage2 />
-          <LaunchPage3 />
+          <LaunchPage4 />
+          {/* <LaunchPage3 /> */}
           <Footer />
         </>
       )}

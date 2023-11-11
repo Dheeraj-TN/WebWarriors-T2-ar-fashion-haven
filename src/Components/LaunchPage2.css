@@ -34,8 +34,9 @@ video {
 }
 
 .Videocontent>h1 {
-    font-size: 75px;
+    font-size: 70px;
     width: 30%;
+    color: white;
 }
 
 .overlay {
@@ -43,9 +44,13 @@ video {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, .4);
-    /* background-color: #000000cc; */
+    height: 100vh;
+        z-index: 1;
+        background: rgba(0, 0, 0, 0);
+        background-image: linear-gradient(to bottom,
+                rgba(0, 0, 0, 1.8) 0,
+                rgba(0, 0, 0, 0) 60%,
+                rgba(0, 0, 0, 0) 100%);
 }
 
 .LaunchPage2__content {
@@ -96,20 +101,3 @@ video {
     cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
-
-    .Videocontent {
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        flex-direction: column;
-    }
-
-    .Videocontent>h1 {
-        width: 100%;
-    }
-
-    .LaunchPage2 {
-        width: 300px;
-    }
-}

@@ -1,6 +1,8 @@
 .lp3__options {
     display: grid;
     margin-left: 50px;
+    text-decoration: none;
+        color: white;
 }
 
 .lp3__options>img {

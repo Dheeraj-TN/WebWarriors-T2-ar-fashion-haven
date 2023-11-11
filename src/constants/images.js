@@ -38,47 +38,80 @@ import shirt_vector from './shirt_vector.png';
 import trouser_vector from './trouser_vector.png';
 import hoodie_vector from './hoodie_vector.png';
 import tshirt_vector from './tshirt_vector.png'
+import kids1 from "./kids1.png";
+import kids2 from "./kids2.png";
+import kids3 from "./kids3_png.png";
+import kids4 from "./kids4_png.png";
+import women1 from "./salwar_kameez1_png.png";
+// import women2 from "./salwar_kameez_2.png";
+// import women3 from "./salwar_kameez_4png.png";
+import women4 from "./women_jeans3_png.png";
+import women5 from "./women_png.png";
+import women6 from "./women2_png.png";
+import shoe1 from "./shoes1.png";
+import shoe2 from "./shoes2.png";
+import shoe3 from "./shoes3.png";
+import shoe4 from "./shoes4.png";
+import shoe5 from "./shoes5.png";
+import shoe6 from "./shoes6.png";
+import shoe7 from "./shoes7.png";
 
-export default{
-    Hoodie1,
-    Hoodie2,
-    open_wardrobe,
-    close_wardrobe,
-    tshirt_1,
-    tshirt_2,
-    tshirt_3,
-    tshirt_4,
-    tshirt_5,
-    tshirt_6,
-    puma_logo,
-    nike_logo,
-    Hoodie1_og,
-    Hoodie2_og,
-    Hoodie3_og,
-    Hoodie4_og,
-    Hoodie1_ed,
-    Hoodie2_ed,
-    Hoodie3_ed,
-    Hoodie4_ed,
-    Shirt1_og,
-    Shirt1_ed,
-    Shirt2_ed,
-    Shirt2_og,
-    Tshirt2_ed,
-    Tshirt2_og,
-    Tshirt3_ed,
-    Tshirt3_og,
-    Pants1_ed,
-    Pants1_og,
-    Pants2_ed,
-    Pants2_og,
-    Pants3_ed,
-    Pants3_og,
-    levis_log,
-    adidas_logo,
-    shirt_vector,
-    trouser_vector,
-    hoodie_vector,
-    tshirt_vector
-
-}
+export default {
+  Hoodie1,
+  Hoodie2,
+  open_wardrobe,
+  close_wardrobe,
+  tshirt_1,
+  tshirt_2,
+  tshirt_3,
+  tshirt_4,
+  tshirt_5,
+  tshirt_6,
+  puma_logo,
+  nike_logo,
+  Hoodie1_og,
+  Hoodie2_og,
+  Hoodie3_og,
+  Hoodie4_og,
+  Hoodie1_ed,
+  Hoodie2_ed,
+  Hoodie3_ed,
+  Hoodie4_ed,
+  Shirt1_og,
+  Shirt1_ed,
+  Shirt2_ed,
+  Shirt2_og,
+  Tshirt2_ed,
+  Tshirt2_og,
+  Tshirt3_ed,
+  Tshirt3_og,
+  Pants1_ed,
+  Pants1_og,
+  Pants2_ed,
+  Pants2_og,
+  Pants3_ed,
+  Pants3_og,
+  levis_log,
+  adidas_logo,
+  shirt_vector,
+  trouser_vector,
+  hoodie_vector,
+  tshirt_vector,
+  kids1,
+  kids2,
+  kids3,
+  kids4,
+  women1,
+  // women2,
+  // women3,
+  women4,
+  women5,
+  women6,
+  shoe1,
+  shoe2,
+  shoe3,
+  shoe4,
+  shoe5,
+  shoe6,
+  shoe7,
+};

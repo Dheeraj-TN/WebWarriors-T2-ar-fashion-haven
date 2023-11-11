@@ -37,7 +37,9 @@ function Footer() {
       </div>
       <div className="footer__bottom">
         <div className="footer__left">
-          <p>© 2023 AR fasion Inc. All rights reserved.</p>
+          <p>
+            © 2023 AR Fasion Matrix (Web Warriors) Inc. All rights reserved.
+          </p>
         </div>
         <div className="footer__right">
           <LinkedInIcon />

@@ -1,10 +1,13 @@
 .header {
+    margin-top: 20px;
     height: 10vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: relative;
-    z-index: 1;
+    position: sticky;
+        z-index: 100;
+        top: 0;
+        backdrop-filter: blur(5px);
 }
 
 .loader {
@@ -31,15 +34,17 @@
     width: 100%;
     padding: 5px;
     outline: none;
-    background-color: black;
+    background-color: transparent;
     color: #f5f5f5;
     font-size: 16px;
+
 }
 
 .header__options {
     display: flex;
     align-items: center;
     cursor: pointer;
+    margin-left: 50px;
 }
 
 .header__options>p {
@@ -77,7 +82,11 @@
 .hamburger {
     display: none;
 }
-
+.logout>.MuiSvgIcon-root {
+    margin-left: 50px;
+    display: flex;
+    align-items: flex-end;
+}
 @media(max-width:768px) {
     .header {
         justify-content: space-evenly;

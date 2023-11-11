@@ -17,15 +17,16 @@ function LaunchPage1() {
           <div className="bgGradient" />
           <Fade left>
             <div className="LaunchPage1__body">
-              <h2>An augmented reality shopping boutique is here</h2>
-              <p>
-                Cult fashion boutique Machine-A and the Institute of Digital
-                Fashion are launching an augmented store environment
-              </p>
-
-              <a className="link" onClick={handleMore}>
-                Learn more
-              </a>
+              <strong>
+                <h2>An augmented reality shopping boutique is here</h2>
+              </strong>
+              <strong>
+                <p id="pTag">
+                  Cult fashion boutique Machine-A and the Institute of Digital
+                  Fashion are launching an augmented store environment
+                </p>
+              </strong>
+              <a href="/about">Learn more</a>
             </div>
           </Fade>
         </div>

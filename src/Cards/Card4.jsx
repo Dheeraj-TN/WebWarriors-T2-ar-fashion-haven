@@ -46,7 +46,7 @@ const Card4 = () => {
       <div className="Card-Wrapper">
         <motion.div
           className="card"
-          style={{ x, y, rotateX, rotateY, z: 100 }}
+          style={{ x, y, rotateX, rotateY, z: 100, border: "none" }}
           drag
           dragElastic={0.05}
           whileTap={{ cursor: "grabbing" }}
